@@ -8,14 +8,16 @@
 <style>
 
 :root {
-   --light: #fff;
-   --dark: #000;
-   
-   --paper: #fffaf2; /*65*/
-   
-   --ink_light: #d18956;
-   --ink_dark: #36080b;
-   --ink_dark_blue: #024959;
+   --imp: #f80;
+
+   --light: #04bfad;
+   --semi_dark: #01403a;
+   --dark: #012626;
+}
+
+* {
+   margin: 0px;
+   padding: 0px;
 }
 
 /* = */
@@ -25,64 +27,45 @@ body {
 }
 
 header {
-   background-color: var(--light);
+   background-color: var(--semi_dark);
    padding: 3%;
-   margin: 0%;
+   margin-bottom: 100%;
 }
 
 main {
-   background-color: var(--paper);
    padding: 5%;
-   margin: 3% 3% 0% 3%;
+   /*margin: auto;*/
 }
 
-#page-controller {
-   margin: 0% 3% 0% 3%;
-   
-   border-color: var(--dark);
-   border-width: 2px 0px 0px 0px;
-   border-style: dashed;
-   
+footer {
+   background-color: var(--semi_dark);
    padding: 2%;
-   
-   background-color: var(--paper);
-}
-
-button nav {
-   visibility: hidden;
-}
-
-button nav:hover {
-   visibility: visible;
+   margin-top: 100%;
 }
 
 /* = */
-
-img {
-   border: 2px solid var(--dark);
-   margin: 2%;
-}
-
-/* = */
-
-h1 {
-   color: var(--light);
-   background-color: var(--dark);
+#imp {
+   color: var(--imp);
+   background-color: var(--semi_dark);
+   padding: 5%;
+   margin: 5%;
+   font-size: 32px;
+   display: block;
    text-align: center;
-   margin: 2% 15% 2% 15%;
+   border-radius: 5px;
 }
 
-h2{
-   color: var(--dark);
+#imp:hover {
+   background-color: var(--dark);
 }
 
-p {
-   color: var(--ink_dark);
+#name {
+   color: var(--light);
+   text-align: right;
+   margin: 0% 0% 0% 80%
 }
 
-button#page-controller {
-   margin: auto;
-}
+/* = */
 
 </style>
 
@@ -91,55 +74,20 @@ button#page-controller {
 
    <!--Header-->
    <header>
-      
-      <!--Opitions-->
-      <nav>
-      <button>Nada</button>
-      <a>Nada</a>
-      </nav>
+      <img src="" alt="logo-Aiko-Oni">
+      <span id="name">Aiko Oni</span>
    </header>
 
    <!--Main-->
    <main>
-
-      <!--Texto-->
-      <article>
-         <div class="colum">
-            <h1>Título</h1>
-            <h2>Sub Título</h2>
-            <p>  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-Ut venenatis gravida sem, at luctus nulla egestas a.
-Maecenas rutrum, leo nec pretium vestibulum, tellus magna pulvinar justo,
-in bibendum dui est vel metus.
-Mauris consequat, sapien quis vehicula congue, nulla lectus porta velit, a
- condimentum ligula sem eget nisi.
-semper nulla a orci mollis tincidunt.
-            </p>
-         </div>
-
-         <div class="colum">
-            <h2>Outro Titulo</h2>
-            <p>Aliquam et sem vitae nibh facilisis venenatis sit amet ut augue. Suspendisse ac mauris ac risus rutrum volutpat.
-Sed vitae eros lacinia, aliquam diam facilisis, sodales ipsum. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-In molestie augue eu ornare pretium.
-Etiam libero erat, convallis nec commodo et, posuere sed elit. </p>
-            <img src="" class="colum">
-         </div>
-      </article>
-      
-      <!--Controle-de-Página-->
-
+      <a id="imp" rel="next" href="games.html">GAMES</a>
+      <a id="imp" rel="next" href="book-read.html">BOOKS/HQs</a>
+      <a id="imp" rel="next" href="animations.html">ANIMATIONS</a>
    </main>
-
-   <div id="page-controller">
-      <button>Nada</button>
-      <span>Nada</span>
-      <button>Nada</button>
-   </div>
 
    <!--Footer-->
    <footer>
-      
+      <span style="color:#fff;">Alvaro de Sousa Silva</span>
    </footer>
 
 </body>

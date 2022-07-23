@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head lang="pt-br">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Aiko-Oni</title>
+
+<style>
+
+:root {
+   --light: #fff;
+   --dark: #000;
+   
+   --paper: #fffaf2; /*65*/
+   
+   --ink_light: #d18956;
+   --ink_dark: #36080b;
+   --ink_dark_blue: #024959;
+}
+
+/* = */
+
+body {
+   background-color: var(--dark);
+}
+
+header {
+   background-color: var(--light);
+   padding: 3%;
+   margin: 0%;
+}
+
+main {
+   background-color: var(--paper);
+   padding: 5%;
+   margin: 3% 3% 0% 3%;
+}
+
+#page-controller {
+   margin: 0% 3% 0% 3%;
+   
+   border-color: var(--dark);
+   border-width: 2px 0px 0px 0px;
+   border-style: dashed;
+   
+   padding: 2%;
+   
+   background-color: var(--paper);
+}
+
+.book {
+   
+}
+
+.book::hover {
+   
+}
+
+button nav {
+   visibility: hidden;
+}
+
+button nav:hover {
+   visibility: visible;
+}
+
+/* = */
+
+img {
+   border: 2px solid var(--dark);
+   margin: 2%;
+}
+
+/* = */
+
+h1 {
+   color: var(--light);
+   background-color: var(--dark);
+   text-align: center;
+   margin: 2% 15% 2% 15%;
+}
+
+h2{
+   color: var(--dark);
+}
+
+p {
+   color: var(--ink_dark);
+}
+
+button#page-controller {
+   margin: auto;
+}
+
+</style>
+
+</head>
+<body>
+
+   <!--Header-->
+   <header>
+      
+      <!--Opitions-->
+      <nav>
+      <button>Nada</button>
+      <a>Nada</a>
+      </nav>
+   </header>
+
+   <!--Main-->
+   <main>
+
+      <!--Texto-->
+      <article>
+         <div class="colum">
+            <h1>Título</h1>
+            <h2>Sub Título</h2>
+            <p>  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+Ut venenatis gravida sem, at luctus nulla egestas a.
+Maecenas rutrum, leo nec pretium vestibulum, tellus magna pulvinar justo,
+in bibendum dui est vel metus.
+Mauris consequat, sapien quis vehicula congue, nulla lectus porta velit, a
+ condimentum ligula sem eget nisi.
+semper nulla a orci mollis tincidunt.
+            </p>
+         </div>
+
+         <div class="colum">
+            <h2>Outro Titulo</h2>
+            <p>Aliquam et sem vitae nibh facilisis venenatis sit amet ut augue. Suspendisse ac mauris ac risus rutrum volutpat.
+Sed vitae eros lacinia, aliquam diam facilisis, sodales ipsum. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+In molestie augue eu ornare pretium.
+Etiam libero erat, convallis nec commodo et, posuere sed elit. </p>
+            <img src="" class="colum">
+         </div>
+      </article>
+      
+      <!--Controle-de-Página-->
+
+   </main>
+
+   <div id="page-controller">
+      <button>Nada</button>
+      <span>Nada</span>
+      <button>Nada</button>
+   </div>
+
+   <!--Footer-->
+   <footer>
+      
+   </footer>
+
+</body>
+</html>
