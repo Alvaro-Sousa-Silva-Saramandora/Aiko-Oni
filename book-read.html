@@ -18,6 +18,11 @@
    --ink_dark_blue: #024959;
 }
 
+* {
+   margin: 0%;
+   padding: 0%;
+}
+
 /* = */
 
 body {
@@ -33,7 +38,15 @@ header {
 main {
    background-color: var(--paper);
    padding: 5%;
-   margin: 3% 3% 0% 3%;
+   margin: auto;
+   margin-top: 5%;
+   border-radius: 1px 1px 0px 0px;
+
+   width: 70%;
+}
+
+article {
+   
 }
 
 #page-controller {
@@ -42,6 +55,11 @@ main {
    border-color: var(--dark);
    border-width: 2px 0px 0px 0px;
    border-style: dashed;
+   border-radius: 0px 0px 1px 1px;
+
+   width: 76%;
+   margin: auto;
+   margin-bottom: 5%;
    
    padding: 2%;
    
@@ -69,6 +87,21 @@ button nav:hover {
 img {
    border: 2px solid var(--dark);
    margin: 2%;
+}
+
+.colum {
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+}
+
+.paragraph {
+   flex-grow: 1;
+   width: 60%;
+}
+
+.ilustration {
+   flex-grow: 2;
 }
 
 /* = */
@@ -112,7 +145,8 @@ button#page-controller {
 
       <!--Texto-->
       <article>
-         <div class="colum">
+      <div class="colum">
+         <div class="paragraph">
             <h1>Título</h1>
             <h2>Sub Título</h2>
             <p>  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -125,14 +159,22 @@ semper nulla a orci mollis tincidunt.
             </p>
          </div>
 
-         <div class="colum">
+         <div class="paragraph">
             <h2>Outro Titulo</h2>
             <p>Aliquam et sem vitae nibh facilisis venenatis sit amet ut augue. Suspendisse ac mauris ac risus rutrum volutpat.
 Sed vitae eros lacinia, aliquam diam facilisis, sodales ipsum. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
 In molestie augue eu ornare pretium.
 Etiam libero erat, convallis nec commodo et, posuere sed elit. </p>
-            <img src="" class="colum">
+            <img src="" class="ilustration">
          </div>
+
+         <div class="paragraph">
+            <p>Aliquam et sem vitae nibh facilisis
+venenatis sit amet ut augue.
+Suspendisse ac mauris ac risus rutrum volutpat.
+Sed vitae eros lacinia,  </p>
+         </div>
+      </div>
       </article>
       
       <!--Controle-de-Página-->
